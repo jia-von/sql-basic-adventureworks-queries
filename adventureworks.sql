@@ -33,3 +33,22 @@ SELECT AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, AddressID 
 --2530 South Colorado Blvd. Denver 80203 	
 --2000 300th Street Denver 80203
 
+--Question 3: Print the city of the customer with customer ID number 40 (found correct record)
+--It is noted that the 'CustomerAddress' table have customerID. 'Address' and 'CustomerAddress' shares the same foreign key of 'AddressID'
+
+--Thefore a search of 'CustomerID' in CustomerAddress is completed first. 
+
+SELECT CustomerID, AddressID FROM `customeraddress` WHERE CustomerID = '40' 
+
+--Address ID: 564. 
+--Second step is to do a search in 'Address' table. 
+
+SELECT City FROM `address` WHERE AddressID = '564' 
+
+--The final answer for the city of CustomerID: 40 is Laredo. 
+
+
+
+
+
+
