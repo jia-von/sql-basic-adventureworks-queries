@@ -25,3 +25,5 @@ ADD CustomerID int(11);
 ALTER TABLE address
 ADD CONSTRAINT FK_address_customer 
 FOREIGN KEY (CustomerID) REFERENCES customer(CustomerID) ;
+
+--FAILED  to complete the insetion using sub-query. 
