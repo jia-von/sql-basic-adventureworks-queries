@@ -1,11 +1,11 @@
 All the keys identified in the given given diagram.
 
-Addresss:
+Address:
 AddressID
 AddressLine1
 AddressLine2
 City
-SateProvinceID
+StateProvinceID
 PostalCode
 rowguid
 
