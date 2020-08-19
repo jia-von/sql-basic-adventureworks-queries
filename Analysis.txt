@@ -9,7 +9,8 @@ rowguid
 
 CustomerAddress:
 CustomerID
-AddressIDAdressTypeID
+AddressID
+AddressTypeID
 rowguid
 
 Customer:

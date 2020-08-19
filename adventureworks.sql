@@ -16,3 +16,20 @@ SELECT CardType, CreditCardID FROM `creditcard` WHERE CreditCardID ='8937';
 
 --Therefore Ms. Carla J Adams owns a credit card called Vista
 
+--Question 2: Query: Print all of the addresses for customer with account number AW00000222
+--It was noted that table 'SalesOrderHeader' shares the same CustomerID foreign key as the 'Customer' table. Therefore for AccountNumber: AW00000222, the CustomerID is 222
+
+SELECT AccountNumber, CustomerID FROM `customer` WHERE AccountNumber ='AW00000222' 
+
+--It was noted that 'CustomerAddress' and 'Customer' shares the foreign key with CustomerID. Therefore the AddressID found was 1025 and 11381. 
+
+SELECT AddressID, CustomerID FROM `customeraddress` WHERE CustomerID ='222' 
+
+--Within 'Address' Table using AddressID 1025 and 11381.
+
+SELECT AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, AddressID FROM `address` WHERE AddressID IN ('1025', '11381') 
+
+--The addresses for AccountNumber AW00000222 are:
+--2530 South Colorado Blvd. Denver 80203 	
+--2000 300th Street Denver 80203
+
